@@ -6,6 +6,7 @@ from .models import Product
 
 class ProductListView(ListView):
     queryset = Produc.objects.all()
+    template_name = "products/list.html"
 # Create your views here.
 
 def product_list_view(request):
